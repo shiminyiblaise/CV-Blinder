@@ -1,16 +1,17 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import { Toaster } from 'sonner'
-// import blink from './blink/client'
+import { BlinkUser } from '@blinkdotnew/sdk'
+import blink from './blink/client'
 import LandingPage from './pages/LandingPage'
 import Dashboard from './pages/Dashboard'
 import CVProcessor from './pages/CVProcessor'
 import TemplateManager from './pages/TemplateManager'
 import Settings from './pages/Settings'
-import Pricing from './pages/Pricing'
+import Pricing from './pages/pricing'
 
 function App() {
-  const [user, setUser] = useState(null)
+  const [user, setUser] = useState<BlinkUser | null>(null)
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
