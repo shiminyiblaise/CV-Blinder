@@ -5,7 +5,6 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../co
 import { Badge } from '../components/ui/badge'
 import { Switch } from '../components/ui/switch'
 import { CheckCircle, Shield, ArrowLeft } from 'lucide-react'
-import blink from '../blink/client'
 
 export default function Pricing() {
   const navigate = useNavigate()
